@@ -94,6 +94,10 @@ The publishable key is meant to be public. Access control is enforced in the dat
 
 Pay figures are estimates to help you plan. Your employer's payroll system is the official record.
 
+## License
+
+[MIT](LICENSE) © 2026 Leading Zero LLC
+
 
 
 ---
