@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #081010;
+  --color-ink-2: #0c1a1c;
+  --color-panel: #102028;
+  --color-line: #1c3640;
+  --color-cyan: #00b0f0;
+  --color-cyan-dim: #0a6f96;
+  --color-mist: #8fb3bf;
+  --color-fog: #e6f4f8;
+  --color-amber: #f5b942;
+  --color-gold: #ffd166;
+  --color-danger: #ff5c7a;
+  --color-violet: #a78bfa;
+  --color-rose: #f472b6;
+
+  --font-display: "Michroma", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html, body, #root { min-height: 100%; }
+
+body {
+  margin: 0;
+  background-color: var(--color-ink);
+  color: var(--color-fog);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+  /* Blueprint grid from the LZ brand imagery */
+  background-image:
+    radial-gradient(ellipse at 50% -10%, rgba(0, 176, 240, 0.14), transparent 60%),
+    linear-gradient(rgba(0, 176, 240, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 176, 240, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px, 28px 28px;
+  background-attachment: fixed;
+}
+
+.glow { box-shadow: 0 0 0 1px rgba(0,176,240,.55), 0 0 24px rgba(0,176,240,.35); }
+.text-glow { text-shadow: 0 0 18px rgba(0, 176, 240, 0.55); }
+
+input[type="time"]::-webkit-calendar-picker-indicator { filter: invert(1) opacity(.6); }
